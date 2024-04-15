@@ -21,20 +21,6 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-		
-		  <!-- Jersey dependencies -->
-        <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet-core</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
-        
-        <!-- Jetty dependencies (optional, if using Jetty as embedded server) -->
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-webapp</artifactId>
-            <version>11.0.2</version>
-        </dependency>
 	</dependencies>
 	<build>
 		<finalName>projcanalrubao</finalName>
