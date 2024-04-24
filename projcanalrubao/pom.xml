@@ -79,4 +79,20 @@
         </plugins>
 		</pluginManagement>
 	</build>
+
+	<repositories>
+    <repository>
+      <id>central</id>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+      <id>custom-repo</id>
+      <url>http://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+      <id>Google Maven Central</id>
+      <url>https://maven-central.storage.googleapis.com/repos/central/data/</url>
+    </repository>
+    <!-- Adicione mais repositórios conforme necessário -->
+  </repositories>
 </project>
