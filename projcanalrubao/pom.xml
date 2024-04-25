@@ -12,8 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 		<jersey.version>2.23</jersey.version>
 	</properties>
 
@@ -71,7 +71,7 @@
                       </httpConnector>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webApp>
-                        <contextPath>${project.build.finalName}</contextPath>
+                        <contextPath>/${project.build.finalName}</contextPath>
                     </webApp>
                 </configuration>
             </plugin>
@@ -79,4 +79,20 @@
         </plugins>
 		</pluginManagement>
 	</build>
+
+	<repositories>
+    <repository>
+      <id>central</id>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+      <id>custom-repo</id>
+      <url>http://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+      <id>Google Maven Central</id>
+      <url>https://maven-central.storage.googleapis.com/repos/central/data/</url>
+    </repository>
+    <!-- Adicione mais repositórios conforme necessário -->
+  </repositories>
 </project>
