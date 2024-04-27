@@ -8,8 +8,8 @@ RUN apk add --no-cache maven
 WORKDIR /app
 
 # Copie os arquivos necessário para a execução do contêiner
-COPY ../src /app/src
-COPY ../pom.xml /app/
+COPY tmp/src /app/src
+COPY tmp/pom.xml /app/
 
 
 
